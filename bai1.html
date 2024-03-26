@@ -1,11 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai1</title>
+    <style>
+        .form {
+        max-width: 80%;
+        margin: auto;
+        border: 2px solid #ffffff;
+        }
+        .chu{
+            color: white;
+            font-size: 15px;
+        }
+        .footer{
+            text-align: right;
+            display: flex;
+            gap: 800px;
+        }
+        .form2{
+            max-width: 15%;
+            max-height: 20%;
+            padding: 2px;
+            border: 2px solid gray;
+            border-radius: 5px;
+        }
+        .form3{
+            max-width: 100%;
+            
+            padding: 2px;
+            border: 2px solid gray;
+            border-radius: 5px;
+        }
+        .form4{
+            max-width: 100%;
+            padding: 2px;
+            border: 2px solid gray;
+            border-radius: 5px;
+        }
+        .form5{
+            max-width: 18%;
+            padding: 2px;
+            border: 2px solid gray;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-  
+    <div class="form">
+        <div style="background-color:rgb(0, 113, 226);background-size: 50px">
+            <label for="menu" class="chu">Giới thiệu &nbsp; | </label>
+            <label for="menu" class="chu">Tin tức &nbsp; | </label> 
+            <label for="menu" class="chu">Thành viên &nbsp; | </label>
+            <label for="menu" class="chu">Thống kê &nbsp; | </label>
+            <label for="menu" class="chu">Thăm dò ý kiến &nbsp; | </label>
+            <label for="menu" class="chu">Tìm kiếm &nbsp;| </label>
+            <label for="menu" class="chu">Liên hệ &nbsp; </label>
+        </div>
+        <div style="background-color:rgb(255, 241, 241)" class="footer">
+            <div>
+                <label for="time">Thứ 2, 25/03/2024, 15:00</label>
+            </div>
+            <div>
+                <input type="search" name="time" id="time" placeholder="Tìm kiếm...">
+            </div>
+        </div>
+        <div style="display: flex;">
+            <div class="form2">
+                <div style="background-color:rgb(105, 142, 255)" >
+                    <a href="Tin tức" class="active" style="display: flex;color: #ffffff;">Tin tức</a>
+                    <a href="Sản phẩm" class="active" style="display: flex;color: #ffffff;">Sản phẩm</a>
+                    <a href="Đối tác" class="active" style="display: flex;color: #ffffff;">Đối tác</a>
+                    <a href="Tuyển dụng" class="active" style="display: flex;color: #ffffff;">Tuyển dụng</a>
+                </div>
+                <br>
+                <img src="anh-1.png" alt="anh1" height="150" >
+                <br>
+                <img src="anh-2.png" alt="anh2" height="300" width="180">
+            </div>  
+            <div>
+                <div class="form3">
+                    <table>
+                        <td style="width: 50%;">
+                            <div>
+                                <img src="anh-10.jpeg" alt="" height="300" width="400">
+                                <br>
+                                <label for="text" style="color:rgb(83, 83, 247);">Học lập trình tại Zent có gì mới ?</label>
+                                <br>
+                                <label for="text">Phương pháp học hoàn toàn mới với đội ngũ giảng viên, trợ giảng nhiệt tình mang lại nhiều kiến thức bổ ích cho học viện. Bên cạnh đó, Zent còn hỗ trợ tối đa giới thiệu việc làm cho học viên sau khi tốt nghiệp</label>
+                            </div>
+                        </td>
+                        <td style="width: 35%;">
+                            <p style="padding-top: 0px;">* Hãy hỗ trợ đối tác của Zent</p>
+                            <p style="padding-top: 40px;">* Học viên của Zent đã làm việc tại đâu</p>
+                            <p style="padding-top: 45px;">* Tuyển dụng kĩ sư lập trình CNTT</p>
+                            <p style="padding-top: 40px;">* Khóa học lập trình cơ bản miễn phí</p>
+                            <p style="padding-top: 30px;">* Hãy hỗ trợ đối tác của Zent</p>     
+                        </td>
+                        <td style="width: 20%;">
+                            <img src="anh-3.png" alt="" style="max-width: 100%;">
+                            <br>
+                            <img src="anh-4.png" alt="" style="max-width: 100%;">
+                            <br>
+                            <img src="anh-5.png" alt="" style="max-width: 100%;">
+                            <br>
+                            <img src="anh-6.png" alt="" style="max-width: 100%;">
+                            <br> 
+                            <img src="anh-7.png" alt="" style="max-width: 100%;">
+                        </td>
+                    </table>
+                </div>
+                <img src="anh-9.png" alt="" style="max-width: 100%;">
+                <div class="form4">
+                    <a href="" style="background-color: rgb(255, 255, 255);">Tin tức hợp tác</a>
+                    <table>
+                        <td style="width: 60%;">
+                            <table>
+                                <td><img src="anh-4.png" alt=""></td>
+                                <td><p style="color: rgb(64, 21, 150);">Zent ký kết hợp tác vs công tin công nghệ</p></td>
+                            </table>
+                            <br>
+                            <p>Phương pháp học hoàn toàn mới với đội ngũ giảng viên, trợ giảng nhiệt tình mang lại nhiều kiến thức bổ ích cho học viện. Bên cạnh đó, Zent còn hỗ trợ tối đ</p>
+                        </td>
+                        <td style="width: 25%;">
+                            <p style="padding-top: 0px;">* Hãy hỗ trợ đối tác của Zent</p>
+                            <p style="padding-top: 20px;">* Tuyển dụng kĩ sư lập trình CNTT</p>
+                            <p style="padding-top: 20px;">* Hãy hỗ trợ đối tác của Zent</p>     
+                        </td>
+                        <td style="width: 15%;">
+                            <img src="anh-3.png" alt="" style="max-width: 100%;">
+                            <br>
+                            <img src="anh-4.png" alt="" style="max-width: 100%;">
+                            <br>
+                            <img src="anh-6.png" alt="" style="max-width: 100%;">
+                        </td>
+                    </table>
+                </div>
+            </div>
+            <div class="form5">
+                <P>Giới thiệu Zent</P>
+                <p>Zent Education được thành lập với triết lý "Không cứ phải là thần đồng, ko cứ phải là giàu có chỉ cần có phương phán giáo dục đúng đắn, tích cực mọi đứa trẻ đều có thể trở thành thiên tài"</p>
+                <br>
+                <img src="anh-8.png" alt="anh-8" style="max-width: 100%;">
+                <br>
+                <img src="anh-2.png" alt="anh-2" style="max-width: 100%;">
+            </div>  
+        </div>
+    </div>
 </body>
 </html>
