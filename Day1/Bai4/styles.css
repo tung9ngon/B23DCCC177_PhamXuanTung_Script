@@ -1,0 +1,35 @@
+.container {
+    background-color: rgb(196, 208, 228);
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Khoảng cách giữa các danh mục */
+    padding: 5px; /* Thêm padding cho độ rộng và chiều cao của container */
+}
+.container img {
+    width: 5px; /* Set width of images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.danh_muc_1, .danh_muc_2 {
+    display: flex;
+    font-size: 5px;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    gap: 5px; /* Khoảng cách giữa các phần tử bên trong danh mục */
+}
+.danh_muc_2{
+    font-weight: bold;
+}
+.danh_muc_item {
+    color: black;
+    vertical-align: middle;
+    display: inline-block;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.danh_muc_item:hover {
+    color: #095bcf;
+}
+.danh_muc_1 img, .danh_muc_2 img {
+    width: 5px; /* Độ rộng cho hình ảnh */
+    height: 5px; /* Độ cao cho hình ảnh */
+}
