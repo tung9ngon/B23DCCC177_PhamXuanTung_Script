@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính Tổng và Trả Về 10</title>
+</head>
+<body>
+
+<script>
+function tinhTongVaTraVe10(a, b) {
+    var tong = a + b;
+    if (tong == 10) {
+        return 10;
+    } else {
+        return tong;
+    }
+}
+
+var soThuNhat = 3;
+var soThuHai = 7;
+var ketQua = tinhTongVaTraVe10(soThuNhat, soThuHai);
+document.write("<h1>Kết quả là: " + ketQua + "</h1>");
+</script>
+
+</body>
+</html>
