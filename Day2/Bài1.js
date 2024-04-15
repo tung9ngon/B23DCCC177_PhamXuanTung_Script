@@ -12,12 +12,10 @@ function sapXepTangDan(array) {
     return array.slice().sort((a, b) => a - b);
 }
 
-// Hàm loại bỏ các phần tử trùng nhau, sao cho mỗi phần tử chỉ xuất hiện 1 lần
 function loaiGiongNhau(array) {
     return Array.from(new Set(array));
 }
 
-// Sử dụng hàm
 const randomArray = taoMangNgauNhien(10, 1, 100);
 console.log("Mảng ngẫu nhiên:", randomArray);
 
