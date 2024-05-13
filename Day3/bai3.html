@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Image Slider</title>
+<style>
+  #slider-container {
+    width: 400px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+  }
+  #slider {
+    width: 2000px; /* Đảm bảo các ảnh rộng hơn container */
+    transition: margin-left 0.5s;
+  }
+  .slide {
+    float: left;
+  }
+</style>
+</head>
+<body>
+
+<div id="slider-container">
+  <div id="slider">
+    <div class="slide"><img src="anh1.jpg" alt="Anh 1"></div>
+    <div class="slide"><img src="anh2.jpg" alt="Anh 2"></div>
+    <div class="slide"><img src="anh3.jpg" alt="Anh 3"></div>
+  </div>
+</div>
+
+<button id="prevBtn">Back</button>
+<button id="nextBtn">Next</button>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    var currentIndex = 0;
+    var slideCount = $('.slide').length;
+    var slideWidth = $('.slide').width();
+
+    function moveSlider() {
+      var newPosition = -(currentIndex * slideWidth);
+      $('#slider').css('margin-left', newPosition);
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slideCount;
+      moveSlider();
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+      moveSlider();
+    }
+
+    $('#nextBtn').click(function() {
+      nextSlide();
+    });
+
+    $('#prevBtn').click(function() {
+      prevSlide();
+    });
+
+    setInterval(function() {
+      nextSlide();
+    }, 5000);
+  });
+</script>
+
+</body>
+</html>

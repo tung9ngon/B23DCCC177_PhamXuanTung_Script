@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thêm mới Item</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#addButton").click(function(){
+    var newItem = $("#newItem").val();
+    if(newItem.trim() !== "") {
+      $("#itemList").append("<li>" + newItem + "</li>");
+      $("#newItem").val(""); // Xoá trắng ô input sau khi thêm vào list
+    }
+  });
+});
+</script>
+</head>
+<body>
+
+<input type="text" id="newItem" placeholder="Nhập một Item">
+<button id="addButton">Add</button>
+
+<ul id="itemList">
+  <!-- Danh sách các item sẽ được thêm vào đây -->
+</ul>
+
+</body>
+</html>
