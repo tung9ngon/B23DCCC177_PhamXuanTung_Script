@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password Input Example</title>
+</head>
+<body>
+
+<form>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password">
+  <button type="button" onclick="togglePasswordVisibility()">Show/Hide</button>
+</form>
+
+<script>
+function togglePasswordVisibility() {
+  var passwordField = document.getElementById("password");
+  if (passwordField.type === "password") {
+    passwordField.type = "text";
+  } else {
+
+    passwordField.type = "password";
+  }
+}
+</script>
+
+</body>
+</html>
